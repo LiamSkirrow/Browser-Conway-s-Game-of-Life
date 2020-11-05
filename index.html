@@ -1,0 +1,42 @@
+<!-- Created by Liam Skirrow, December 2018 -->
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="conway.css" />
+		<script type="text/javascript" src="conway.js" > </script>
+		<title> RIP John Conway </title>
+		<h1 align="center" > Conway's Game Of Life </h1>
+		<div id="buttons" >
+			<input type="button" value="start" onclick="gameLogic()" >
+			<input type="button" value="stop" onclick="_halt()" >
+			<input type="button" value="grid" onclick="showGrid()" >
+			<input type="button" value="reset" onclick="reset()" >
+			<select id="sizeMenu" onchange="changePixelSize();">
+  				<option value="small" > small </option>
+  				<option value="medium" selected="selected" > medium </option>
+  				<option value="large" > large </option>
+			</select>
+			<select id="colourMenu" onchange="changePixelColour();">
+  				<option value="white" selected="selected" > white </option>
+  				<option value="blue"  > blue </option>
+  				<option value="red" > red </option>
+  				<option value="grey" > grey </option>
+  				<option value="purple" > purple </option>
+  				<option value="green" > green </option>
+			</select>
+			<input type="range" id="delaySlider" min="10" max="500" onchange="changeTime(this.value)">
+		</div>
+	</head>
+
+	<body>
+		<div id="canvas">
+			<div id="pixel" class="pixelClass"> </div>
+		</div>
+		<!--
+		<br>
+		<br>
+		<p id="paragraphText">
+		Common configurations: ...(list some interesting pics of common occurrences (check wikipedia))...
+		</p>
+		-->
+	</body>
+</html>

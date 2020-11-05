@@ -1,0 +1,37 @@
+body{
+	background-color: black;
+}
+
+h1{
+	color: white;
+	font-family: Courier New;
+}
+
+#paragraphText{
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+#canvas{
+	margin: 0 auto;  /* this line enforces the centre alignment */
+	height: 600px;
+	width: 1200px;
+	/* background-color: black; */
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	position: relative;
+}
+
+#pixel{
+	background-color: black;
+	
+	/* temporary fields 
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	temporary fields */
+
+	position: absolute;
+}
